@@ -214,6 +214,7 @@ window.findNQueensSolution = function(n) {
       board.togglePiece(row, col);
     }
   };
+  //should we toggle before entering? I think this keeps the toggle stuck at 0, 0
   solution.togglePiece(0, 0);
   traverseBoard(solution, 0, 0);
   
